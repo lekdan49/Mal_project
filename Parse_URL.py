@@ -1,11 +1,13 @@
 import requests
 from bs4 import BeautifulSoup
 import re
+import textwrap
 import urllib
 from urllib.request import urlopen
 f = open('NEW_URLS.txt', 'r')
-
+global title
 for child in f:
+    title = ''
     str(child)
     r = requests.get(child)
     soup = BeautifulSoup(r.text, 'html.parser')
@@ -16,15 +18,25 @@ for child in f:
     #         8.28
     #       </div>
 
-    str(score)
+
     title = title[3]
-    print(title)
+    title = str(title)
+    title = re.sub('\<.*?\>', '', title)
+    title = textwrap.dedent(title)
 
     # print(new_data)
-    decimal_val = re.findall(r"[-+]?\d*\.\d+|\d+", str(score))
-    decimal_val = str(decimal_val[-1])
-    print(decimal_val)
 
+    decimal_val = re.findall(r"[-+]?\d*\.\d+|\d+", str(score))
+
+    decimal_val = str(decimal_val[-1])
+
+    title = str(title)
+    decimal_val = str(decimal_val)
+    f = open("DATA.txt", "a")
+    list_a = [title, decimal_val]
+    print(list_a)
+    # with f as the_file:
+    #     the_file.write(list_a)
 
 
 # r = requests.get('https://myanimelist.net/anime/6547')
