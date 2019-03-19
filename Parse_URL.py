@@ -2,6 +2,9 @@ import requests
 from bs4 import BeautifulSoup
 import re
 import textwrap
+import lxml.html
+
+
 import urllib
 from urllib.request import urlopen
 f = open('NEW_URLS.txt', 'r')
@@ -20,6 +23,7 @@ for child in f:
 
     title = title[3]
     title = str(title)
+    print(title)
     title = re.sub('\<.*?\>', '', title)
     title = textwrap.dedent(title)
 
@@ -31,16 +35,17 @@ for child in f:
 
     title = str(title)
     decimal_val = str(decimal_val)
-    f = open("DATA.txt", "a")
+
     list_a = [title, decimal_val]
 
     list_a = [(el.strip()) for el in list_a]
 
     print(list_a)
-    # with f as the_file:
-    #     the_file.write(list_a)
+    f = open("DATA.txt", "a")
+    f.write("%s\n" % list_a)
 
-
+    t = lxml.html.parse('child')
+    print(t.find(".//title").text)
 # r = requests.get('https://myanimelist.net/anime/6547')
 # soup = BeautifulSoup(r.text, 'html.parser')
 # score = soup.find_all('div', attrs={'class':'fl-l score'})
