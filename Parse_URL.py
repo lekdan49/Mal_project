@@ -18,7 +18,6 @@ for child in f:
     #         8.28
     #       </div>
 
-
     title = title[3]
     title = str(title)
     title = re.sub('\<.*?\>', '', title)
@@ -34,6 +33,9 @@ for child in f:
     decimal_val = str(decimal_val)
     f = open("DATA.txt", "a")
     list_a = [title, decimal_val]
+
+    list_a = [(el.strip()) for el in list_a]
+
     print(list_a)
     # with f as the_file:
     #     the_file.write(list_a)
