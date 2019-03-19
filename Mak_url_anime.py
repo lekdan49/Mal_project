@@ -10,7 +10,7 @@ for child in f:
     print(final_url)
     f = open("URLS.txt", "a")
 
-    f.write("%r\n" %final_url)
+    f.write("%r\n" % final_url)
 
     f.close()
     with open('URLS.txt', 'r') as f, open('Cleaned_URLS.txt', 'w') as fo:
@@ -21,8 +21,6 @@ os.remove('URLS.txt')
 
 # https://myanimelist.net/anime/37033
 # //*[@id="content"]/table/tbody/tr/td[2]/div[1]/table/tbody/tr[1]/td/div[1]/div[1]/div[1]/div[1]/div[1]/text()
-
-
 
 
 with open('Cleaned_URLS.txt', 'r') as infile, open('NEW_URLS.txt', 'w') as outfile:
