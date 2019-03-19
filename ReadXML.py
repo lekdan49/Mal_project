@@ -14,6 +14,9 @@ with open('anidbid.txt', 'r') as f, open('output.txt', 'w') as fo:
     for line in f:
         fo.write(line.replace('"', '').replace("'", ""))
 
+
+
+
 shutil.move("output.txt", "Done_ani/output.txt")
 os.remove("anidbid.txt")
 
