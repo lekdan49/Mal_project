@@ -12,8 +12,8 @@ https://malscraper.azurewebsites.net/
 4. Look through text files
 
 dependencies:
-python 3
-requests
-lxml
-bs4
-https://slproweb.com/products/Win32OpenSSL.html ---openssl
+<p>python 3</p>
+<p>requests</p>
+<p>lxml</p>
+<p>bs4</p>
+<p>https://slproweb.com/products/Win32OpenSSL.html ---openssl</p>
