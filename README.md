@@ -6,10 +6,10 @@ code not documented or commented, super shit code.
 
 Get xml from below:
 <p>https://malscraper.azurewebsites.net/</p>
-1. Run Read xml
-2. Run Mak url
-3. Run Parse URl
-4. Look through text files
+<p>1. Run Read xml</p>
+<p>2. Run Mak url</p>
+<p>3. Run Parse URl</p>
+<p>4. Look through text files</p>
 
 dependencies:
 <p>python 3</p>
