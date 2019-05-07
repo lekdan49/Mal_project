@@ -1,8 +1,8 @@
 # Mal_project
-Mal XML parser
-Works well.
-Pass through exported mal xml file.
-code not documented or commented, super shit code.
+Mal XML parser.
+Works as expected.
+<p>Pass through exported mal xml file, change name of file in Readxml.py file </p>
+<p>code not documented or commented, super shit code.</p>
 
 Get xml from below:
 <p>https://malscraper.azurewebsites.net/</p>
