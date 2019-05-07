@@ -5,7 +5,7 @@ Pass through exported mal xml file.
 code not documented or commented, super shit code.
 
 Get xml from below:
-https://malscraper.azurewebsites.net/
+<p>https://malscraper.azurewebsites.net/</p>
 1. Run Read xml
 2. Run Mak url
 3. Run Parse URl
