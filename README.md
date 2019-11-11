@@ -2,7 +2,7 @@
 Mal XML parser.
 Works as expected.
 <p>Pass through exported mal xml file, change name of file in Readxml.py file </p>
-<p>code not documented or commented, super shit code.</p>
+<p>code super shit.</p>
 
 Get xml from below:
 <p>https://malscraper.azurewebsites.net/</p>
